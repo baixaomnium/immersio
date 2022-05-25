@@ -1,0 +1,23 @@
+<html>
+    <meta charsert="UTF-8">
+    <head>
+</head>
+<body>
+<form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
+    Nom complet:
+    <input name="nom" id="nom" type="text" maxlength="64"/><br>
+    Número de soci:
+    <input name="numSoci" id="numSoci" type="number" maxlength="7"/>
+    <input name="pmSubmit" type="submit" value="Enviar" /><br>
+    </body>
+<script>
+        function sendMail() {
+            var num_soci = document.getElementById("numSoci").value;
+            var nom = document.getElementById("nom").value;
+            var text = 'Jo, '+nom+', amb número de soci '+num_soci+", soŀlicito la baixa d'Omnium a causa de la vergonyant posicó que ha pres respecte el malanomenat pacte per la immersió entre ERC, JxCat, PSC i els Comuns."
+            var subject = "Petició de baixa de l'associació"
+            window.open('mailto:test@example.com?subject='+subject+'&body='+encodeURI(text));
+        }
+
+    </script>
+</html>
