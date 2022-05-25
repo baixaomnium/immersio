@@ -4,11 +4,14 @@
 </head>
 <body>
 <form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
-    Nom complet:
+    Aquest formulari facilita l'eniament d'un correu electrònic a Omnium per demanar la baixa de l'associació amb motiu del recolzament de l'entitat a l'acord polític que facilita el final de la immersió.<br>
+    El correu generat pot ser revisat i modificat abans d'enviar-lo.<br>
+    <br>
+    <label>Nom complet:</label><br>
     <input name="nom" id="nom" type="text" maxlength="64"/><br>
-    Número de soci:
-    <input name="numSoci" id="numSoci" type="number" maxlength="7"/>
-    <input name="pmSubmit" type="submit" value="Enviar" /><br>
+    <label>Número de soci:</label><br>
+    <input name="numSoci" id="numSoci" type="number" maxlength="7"/><br>
+    <input name="pmSubmit" type="submit" value="Generar correu" /><br>
     </body>
 <script>
         function sendMail() {
